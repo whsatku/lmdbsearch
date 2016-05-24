@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>th.in.whs.ku</groupId>
+    <artifactId>webappfinal</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.deephacks.lmdbjni</groupId>
+            <artifactId>lmdbjni</artifactId>
+            <version>0.4.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.deephacks.lmdbjni</groupId>
+            <artifactId>lmdbjni-linux64</artifactId>
+            <version>0.4.6</version>
+        </dependency>
+        <dependency>
+            <groupId>net.openhft</groupId>
+            <artifactId>zero-allocation-hashing</artifactId>
+            <version>0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.rapidoid</groupId>
+            <artifactId>rapidoid-http-server</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.rapidoid</groupId>
+            <artifactId>rapidoid-watch</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>th.in.whs.ku.webapp.server.FastServer</mainClass>
+                            <!--<mainClass>th.in.whs.ku.webapp.lmdb.Loader</mainClass>-->
+                            <!--<mainClass>th.in.whs.ku.webapp.bloom.Bloom</mainClass>-->
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
