@@ -13,6 +13,7 @@
         <module>lmdb</module>
         <module>bloom</module>
         <module>lmdbserver</module>
+        <module>hbaseimport</module>
     </modules>
 
     <dependencies>

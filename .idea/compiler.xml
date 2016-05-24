@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="bloom" />
         <module name="common" />
+        <module name="hbaseimport" />
         <module name="lmdb" />
         <module name="lmdbserver" />
       </profile>
@@ -31,6 +32,7 @@
     <bytecodeTargetLevel>
       <module name="bloom" target="1.7" />
       <module name="common" target="1.7" />
+      <module name="hbaseimport" target="1.7" />
       <module name="lmdb" target="1.7" />
       <module name="lmdbserver" target="1.7" />
       <module name="webappfinal" target="1.7" />
