@@ -22,10 +22,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="webappfinal" />
+        <module name="bloom" />
+        <module name="common" />
+        <module name="lmdb" />
+        <module name="lmdbserver" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bloom" target="1.7" />
+      <module name="common" target="1.7" />
+      <module name="lmdb" target="1.7" />
+      <module name="lmdbserver" target="1.7" />
       <module name="webappfinal" target="1.7" />
     </bytecodeTargetLevel>
   </component>

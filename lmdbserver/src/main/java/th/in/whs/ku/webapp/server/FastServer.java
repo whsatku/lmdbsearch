@@ -7,11 +7,10 @@ import com.google.common.io.Resources;
 import org.rapidoid.http.Req;
 import org.rapidoid.http.ReqHandler;
 import org.rapidoid.setup.On;
-import th.in.whs.ku.webapp.common.QueryFacade;
+import th.in.whs.ku.webapp.common.Tokenize;
 import th.in.whs.ku.webapp.lmdb.LmdbQuery;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class FastServer {
@@ -27,7 +26,7 @@ public class FastServer {
         On.post("/").html(new ReqHandler() {
             public Object execute(Req req) throws Exception {
                 String input = req.posted("input").toString();
-                List<String> tokens = tokenize(input);
+                List<String> tokens = Tokenize.tokenize(input);
                 LmdbQuery.Result[] results = query(input);
 
                 StringBuilder output = new StringBuilder();
@@ -61,22 +60,10 @@ public class FastServer {
         });
     }
 
-    private static List<String> tokenize(String str){
-        List<String> output = new ArrayList<>();
-        str = str.replace("\r\n", "\n");
 
-        for(String lines: str.split("\n\n")){
-            String[] sentences = lines.replace("\n", " ").split("\\. ");
-            for(String sentence: sentences){
-                output.add(sentence.trim());
-            }
-        }
-
-        return output;
-    }
 
     private static LmdbQuery.Result[] query(String str){
-        List<String> input = tokenize(str);
+        List<String> input = Tokenize.tokenize(str);
         LmdbQuery.Result[] out = new LmdbQuery.Result[input.size()];
 
         for(int i = 0; i < input.size(); i++){

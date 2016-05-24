@@ -1,4 +1,4 @@
-package th.in.whs.ku.webapp.common;
+package th.in.whs.ku.webapp.server;
 
 import th.in.whs.ku.webapp.bloom.BloomQuery;
 import th.in.whs.ku.webapp.lmdb.LmdbQuery;
