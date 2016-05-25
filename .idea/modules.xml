@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/bloom/bloom.iml" filepath="$PROJECT_DIR$/bloom/bloom.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/hbaseimport/hbaseimport.iml" filepath="$PROJECT_DIR$/hbaseimport/hbaseimport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hbasequery/hbasequery.iml" filepath="$PROJECT_DIR$/hbasequery/hbasequery.iml" />
       <module fileurl="file://$PROJECT_DIR$/lmdb/lmdb.iml" filepath="$PROJECT_DIR$/lmdb/lmdb.iml" />
       <module fileurl="file://$PROJECT_DIR$/lmdbserver/lmdbserver.iml" filepath="$PROJECT_DIR$/lmdbserver/lmdbserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/webappfinal.iml" filepath="$PROJECT_DIR$/webappfinal.iml" />
