@@ -25,7 +25,7 @@ public class HBaseReducer extends TableReducer<Text, MapWritable, ImmutableBytes
 
         Put put = new Put(Bytes.toBytes(key.toString()));
         put.add(COL_FAMILY, COL_FILE, Bytes.toBytes(filename.toString()));
-        put.add(COL_FAMILY, COL_PARAGRAPH, Longs.toByteArray(paragraph.get()));
+        put.add(COL_FAMILY, COL_PARAGRAPH, Bytes.toBytes(paragraph.get()));
 
         context.write(null, put);
     }

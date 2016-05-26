@@ -14,8 +14,8 @@ import java.io.IOException;
 public class HBaseImport {
     public static void main(String[] args) throws InterruptedException, IOException, ClassNotFoundException {
         Configuration conf = HBaseConfiguration.create();
-        conf.set("textinputformat.record.delimiter", "\r\n\r\n");
-        conf.set("mapred.compress.map.output", "true");
+        conf.set("mapreduce.compress.map.output", "true");
+        conf.set("textinputformat.record.delimiter", "1q2w3e");
         Job job = Job.getInstance(conf, "HBaseImport");
         job.setJarByClass(HBaseImport.class);
 
