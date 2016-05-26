@@ -15,6 +15,7 @@
         <module>lmdbserver</module>
         <module>hbaseimport</module>
         <module>hbasequery</module>
+        <module>hbaseserver</module>
     </modules>
 
     <dependencies>

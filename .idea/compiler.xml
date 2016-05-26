@@ -26,6 +26,7 @@
         <module name="common" />
         <module name="hbaseimport" />
         <module name="hbasequery" />
+        <module name="hbaseserver" />
         <module name="lmdb" />
         <module name="lmdbserver" />
       </profile>
@@ -35,6 +36,7 @@
       <module name="common" target="1.7" />
       <module name="hbaseimport" target="1.7" />
       <module name="hbasequery" target="1.7" />
+      <module name="hbaseserver" target="1.7" />
       <module name="lmdb" target="1.7" />
       <module name="lmdbserver" target="1.7" />
       <module name="webappfinal" target="1.7" />

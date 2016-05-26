@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Final project (HBase implementation)</title>
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+	<style>
+		body{
+			font-family: Helvetica, sans-serif;
+		}
+		.red, .green{
+			margin-bottom: 10px;
+		}
+		.green{
+			color: green;
+		}
+		.found{
+			margin-left: 5px;
+			background: #ffffaa;
+			font-size: 80%;
+		}
+	</style>
+</head>
+<body>
+<h1>Final project</h1>
+Using HBase backend
+<form method="POST">
+	<textarea name="input" style="width: 100%; height: 400px;">%INPUT%</textarea>
+	<input formaction="/" type="submit" value="Check" />
+	<input formaction="/api" type="submit" value="JSON" />
+</form>
+%OUTPUT%
+</body>
+</html>
