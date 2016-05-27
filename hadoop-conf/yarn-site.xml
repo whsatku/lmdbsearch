@@ -1,0 +1,31 @@
+<configuration>
+     <property>
+         <name>yarn.resourcemanager.hostname</name>
+         <value>master.webapp.ku.whs.in.th</value>
+     </property>
+     <property>
+         <name>yarn.scheduler.minimum-allocation-mb</name>
+         <value>128</value>
+     </property>
+     <property>
+         <name>yarn.scheduler.maximum-allocation-mb</name>
+         <value>800</value>
+     </property>
+     <property>
+         <name>yarn.nodemanager.resource.memory-mb</name>
+         <value>800</value>
+     </property>
+     <property>
+         <name>yarn.nodemanager.aux-services</name>
+         <value>mapreduce_shuffle</value>
+     </property>
+     <property>
+         <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+         <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+     </property>
+    <property>
+         <name>yarn.nodemanager.vmem-check-enabled</name>
+         <value>false</value>
+     </property>
+</configuration>
+

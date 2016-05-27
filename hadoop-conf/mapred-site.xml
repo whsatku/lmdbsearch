@@ -1,0 +1,24 @@
+<configuration>
+     <property>
+         <name>mapreduce.framework.name</name>
+         <value>yarn</value>
+     </property>
+     <property>
+         <name>mapreduce.job.tracker</name>
+         <value>master.webapp.ku.whs.in.th:54311</value>
+     </property> 
+     <property>
+         <name>mapreduce.map.memory.mb</name>
+         <value>500</value>
+     </property>
+     <property>
+         <name>mapreduce.reduce.memory.mb</name>
+         <value>500</value>
+     </property>
+     <property>
+         <name>yarn.app.mapreduce.am.resource.mb</name>
+         <value>500</value>
+         <source>mapred-site.xml</source>
+     </property>
+</configuration>
+
