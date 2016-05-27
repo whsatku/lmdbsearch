@@ -22,6 +22,10 @@ public class MapFileConverter {
         job.setMapperClass(ParagraphMapper.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(MapWritable.class);
+
+        job.setOutputFormatClass(MapFileOutputFormat.class);
+        job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(MapWritable.class);
         TextInputFormat.setInputPaths(job, new Path(args[0]));
         MapFileOutputFormat.setOutputPath(job, new Path(args[1]));
 

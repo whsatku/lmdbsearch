@@ -16,6 +16,7 @@
         <module>hbaseimport</module>
         <module>hbasequery</module>
         <module>hbaseserver</module>
+        <module>hdfsserver</module>
     </modules>
 
     <dependencies>
